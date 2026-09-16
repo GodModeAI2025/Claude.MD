@@ -8,7 +8,7 @@ Personal copy of my `CLAUDE.md` — behavioral guidelines for Claude Code and ot
 |---|---|
 | 1–4 — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution | Original guidelines from [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills), derived from Andrej Karpathy's observations on LLM coding pitfalls |
 | 5–11, 13 — Verify Before Claiming Done, Test Integrity, Don't Mask Errors, When Blocked, Dangerous Operations, Dependencies, Project Commands, Task Report | Extensions drafted with Claude (Anthropic), July 2026 |
-| 12 — Secrets and Untrusted Input; §5 bullets on invented APIs and unsearched "doesn't exist" claims | Added September 2026, ideas from [coding-agent-rules](https://github.com/jitendravyas/coding-agent-rules) (MIT), rewritten in this file's style |
+| 12 — Secrets and Untrusted Input; §5 bullets on invented APIs and unsearched "doesn't exist" claims | Added September 2026, adapted and condensed from [coding-agent-rules](https://github.com/jitendravyas/coding-agent-rules) (MIT License, Copyright (c) 2026 Jitendra Vyas) |
 
 ## Usage
 
