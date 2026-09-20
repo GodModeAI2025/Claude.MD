@@ -7,8 +7,9 @@ Personal copy of my `CLAUDE.md` — behavioral guidelines for Claude Code and ot
 | Sections | Origin |
 |---|---|
 | 1–4 — Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution | Original guidelines from [andrej-karpathy-skills](https://github.com/multica-ai/andrej-karpathy-skills), derived from Andrej Karpathy's observations on LLM coding pitfalls |
-| 5–11, 13 — Verify Before Claiming Done, Test Integrity, Don't Mask Errors, When Blocked, Dangerous Operations, Dependencies, Project Commands, Task Report | Extensions drafted with Claude (Anthropic), July 2026 |
+| 5–11, 14 — Verify Before Claiming Done, Test Integrity, Don't Mask Errors, When Blocked, Dangerous Operations, Dependencies, Project Commands, Task Report | Extensions drafted with Claude (Anthropic), July 2026 |
 | 12 — Secrets and Untrusted Input; §5 bullets on invented APIs and unsearched "doesn't exist" claims | Added September 2026, adapted and condensed from [coding-agent-rules](https://github.com/jitendravyas/coding-agent-rules) (MIT License, Copyright (c) 2026 Jitendra Vyas) |
+| 13 — When Corrected; §1 bullet on investigate-only tasks; §5 bullet on proof per change type | Added September 2026, adapted and condensed from [grokbot-field-notes](https://github.com/unicodef1wn/grokbot-field-notes) (MIT License, Copyright (c) 2026 unicodef1wn) |
 
 ## Usage
 

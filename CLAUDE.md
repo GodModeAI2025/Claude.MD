@@ -13,6 +13,7 @@ Before implementing:
 - If multiple interpretations exist, present them - don't pick silently.
 - If a simpler approach exists, say so. Push back when warranted.
 - If something is unclear, stop. Name what's confusing. Ask.
+- If asked to investigate, investigate. Report what you found and stop - don't start fixing because you spotted something on the way.
 
 ## 2. Simplicity First
 
@@ -70,6 +71,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - Reproduce a bug before fixing it. If you can't reproduce it, say so instead of fixing blind.
 - Don't invent APIs, flags, config keys, or paths. Confirm they exist in the installed version - your memory may be outdated.
 - Don't claim something "doesn't exist" or "is unused" without running a search that would have found it.
+- Match the proof to the change: a bug fix needs the failing reproduction and then the same steps passing; a performance claim needs before-and-after numbers from a real run; a UI change needs a walkthrough of the flow; a refactor needs the check that shows behavior is unchanged.
 
 ## 6. Test Integrity
 
@@ -143,7 +145,17 @@ If these are missing or broken, flag it before starting work.
 - Never pass secrets as command-line arguments. Use environment variables or the project's secret store.
 - If a secret may have been exposed, report it without repeating the value.
 
-## 13. Task Report
+## 13. When Corrected
+
+**Apply the fix, then write down the principle - not the incident.**
+
+- After a correction, ask what general rule it implies. Fixing only the instance means hitting the same class of mistake again.
+- Keep the rule free of the story: no dates, no file names, no "because X happened". A rule tied to one incident won't fire next time.
+- Bad: "Set a 5s timeout on the billing client, it hung during the March import." Good: "Give every outbound call an explicit timeout."
+- Propose where the rule belongs (this file, project instructions, a test) - don't silently rewrite shared instructions.
+- Don't stack a correction on top of a workaround. If the fix reveals the earlier approach was wrong, say so.
+
+## 14. Task Report
 
 **End every non-trivial task with a short summary:**
 
