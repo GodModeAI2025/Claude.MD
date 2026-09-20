@@ -16,9 +16,10 @@ Personal copy of my `CLAUDE.md` — behavioral guidelines for Claude Code and ot
 Checked against `multica-ai/andrej-karpathy-skills` on 2026-09-20:
 
 - The repository carries no `LICENSE` file, and GitHub's license API reports none for it.
-- Its `README.md` has a "License" section whose entire content is "MIT", and `.claude-plugin/plugin.json` sets `"license": "MIT"`. Neither names a copyright holder, and the MIT license text itself is not included anywhere in the repository.
+- Its `README.md` has a "License" section whose entire content is "MIT", and `.claude-plugin/plugin.json` sets `"license": "MIT"`. Neither carries a copyright line: no file in the repository contains the word "Copyright" or the MIT permission text.
+- The plugin and marketplace manifests do name `forrestchang` as author — the only person named anywhere in the repository.
 
-The terms under which sections 1–4 may be reused are therefore not established by the upstream repository. This note records what was checked, nothing more; it is not legal advice, and the question is still open for this repository's owner.
+The terms under which the copied material may be reused are therefore not established by the upstream repository. This note records what was checked, nothing more; it is not legal advice, and the question is still open for this repository's owner.
 
 The other two upstream projects each ship a `LICENSE` file with a copyright line, which is why their rows can name one.
 
