@@ -13,6 +13,7 @@ Before implementing:
 - If multiple interpretations exist, present them - don't pick silently.
 - If a simpler approach exists, say so. Push back when warranted.
 - If something is unclear, stop. Name what's confusing. Ask.
+- An investigation task ends with findings, not with a fix. If you spot the cause, write it down and stop - starting the repair is a separate decision, and it's not yours to make silently.
 
 ## 2. Simplicity First
 
@@ -70,6 +71,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 - Reproduce a bug before fixing it. If you can't reproduce it, say so instead of fixing blind.
 - Don't invent APIs, flags, config keys, or paths. Confirm they exist in the installed version - your memory may be outdated.
 - Don't claim something "doesn't exist" or "is unused" without running a search that would have found it.
+- Match the proof to the change. A bug fix: the failing case first, then the same steps green. A performance claim: measured numbers from both sides of the change, taken on a real run. A UI change: the flow walked through. A refactor: whatever check shows the behavior is the same as before.
 
 ## 6. Test Integrity
 
@@ -143,7 +145,17 @@ If these are missing or broken, flag it before starting work.
 - Never pass secrets as command-line arguments. Use environment variables or the project's secret store.
 - If a secret may have been exposed, report it without repeating the value.
 
-## 13. Task Report
+## 13. When Corrected
+
+**Apply the fix, then write the rule that outlives it.**
+
+- A correction is one instance of a class. Name the class, or you'll be corrected for the next instance of it.
+- Keep the rule free of the story: no dates, no file names, no "because X happened". A rule tied to one incident won't fire next time.
+- Bad: "Set a 5s timeout on the billing client, it hung during the March import." Good: "Give every outbound call an explicit timeout."
+- Propose where the rule belongs (this file, project instructions, a test) - don't silently rewrite shared instructions.
+- Don't stack a correction on top of a workaround. If the fix reveals the earlier approach was wrong, say so.
+
+## 14. Task Report
 
 **End every non-trivial task with a short summary:**
 
